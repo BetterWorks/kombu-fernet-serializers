@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals, absolute_import
+from __future__ import absolute_import, unicode_literals
 
 from kombu.exceptions import SerializerNotInstalled
 
-from . import fernet_encode, fernet_decode
+from . import fernet_decode, fernet_encode
 
 try:
     try:

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals, absolute_import
+from __future__ import absolute_import, unicode_literals
 
 from kombu.serialization import pickle, pickle_protocol, unpickle
 
-from . import fernet_encode, fernet_decode
+from . import fernet_decode, fernet_encode
 
 
 def pickle_dumps(obj, dumper=pickle.dumps):
