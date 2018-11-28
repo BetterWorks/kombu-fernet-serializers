@@ -42,3 +42,5 @@ def force_text(func):
     def inner(message):
         if isinstance(message, six.binary_type):
             message = message.decode('utf-8')
+        return func(message)
+    return inner
